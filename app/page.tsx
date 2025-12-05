@@ -49,7 +49,7 @@ export default function Home() {
   }, [isXL]);
 
   return (
-    <div className="xl:overflow-hidden">
+    <div className="xl:overflow-hidden overflow-x-hidden">
       {loading && (
         <div
           className={`top-0 left-0 pointer-events-none h-screen w-screen bg-black fixed z-100 flex items-center justify-center`}
@@ -97,7 +97,7 @@ export default function Home() {
           src="/images/screenshot4.png"
           className="pointer-events-none z-2 max-xl:hidden w-[35vh] aspect-398/427 absolute bottom-[-3.5vw] left-[599px] object-contain max-w-[398px] "
         />
-        <div className="absolute max-xl:hidden flex gap-2 z-1 top-[30vh] right-[3vw] max-w-[90vh] w-[45vw] justify-end items-start">
+        <div className="absolute xl:flex hidden  gap-2 z-1 top-[30vh] right-[3vw] max-w-[90vh] w-[45vw] justify-end items-start">
           <div className="relative h-full w-full aspect-697/572">
             <Image
               src="/images/logo-pin.png"
@@ -165,7 +165,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="absolute max-xl:hidden flex gap-2 z-1 top-[30vh] right-[3vw] max-w-[90vh] w-[45vw] justify-end items-start">
+        <div className="absolute xl:flex hidden gap-2 z-1 top-[30vh] right-[3vw] max-w-[90vh] w-[45vw] justify-end items-start">
           <div
             className={`${styles.image_shadow}  relative w-1/6 max-w-[209px] rounded-[27px] aspect-209/452 mt-[8%] overflow-hidden  transition-transform duration-700 ease-out hover:scale-105`}
           >
@@ -202,7 +202,7 @@ export default function Home() {
         </div>
         {/* form */}
 
-        <div className="xl:w-[546px]  max-xl:pb-25 w-full relative min-h-full">
+        <div className="xl:w-[546px] pb-25 w-full relative min-h-full">
           <Video
             src="/video.mp4"
             className="pointer-events-none absolute top-0 left-0 object-cover w-full h-full"
@@ -230,11 +230,11 @@ export default function Home() {
                 width={40}
                 height={40}
                 src={'/images/fire_1f525.png'}
-                className="object-contain h-[3.5vh]"
+                className="object-contain w-10 aspect-square xl:w-[3.5vh]"
               />
               {texts.waitlist.foundingSeason}
             </p>
-            <p className="fade-up-custom4 text-center mx-auto max-w-[352px] leading-[19px] mt-[4vh]  text-[2vh] text-white font-normal">
+            <p className="fade-up-custom4 text-center mx-auto max-w-[352px] leading-[19px] mt-[4vh] text-[16px] xl:text-[2vh] text-white font-normal">
               Only 350 spots in San Francisco get Early
               <br /> Access before launch.
               <br /> <span className="font-bold">The top 100</span> also earn
@@ -250,11 +250,13 @@ export default function Home() {
               />
               {texts.waitlist.areYouReady}
             </p>
-            <div className="xl:mt-5 mt-3 max-xl:px-5">
+            <form autoComplete="on" className="xl:mt-5 mt-3 max-xl:px-5">
               <input
-                type="text"
+                autoComplete="email"
+                type="email"
+                name="email"
                 placeholder={texts.forms.emailAddress}
-                className="mt-3 outline-none!  max-xl:max-w-[369px] text-white px-7 placeholder:text-[18px] text-[18px] placeholder:text-white placeholder:opacity-[0.5] flex items-center max-w-[369px] w-full xl:max-w-[437px] h-[57px] mx-auto xl:h-[clamp(4vh,6vh,57px)] border border-white backdrop-blur-[7.1px] rounded-2xl"
+                className="mt-3 outline-none!  max-xl:w-full text-white px-7 placeholder:text-[18px] text-[18px] placeholder:text-white placeholder:opacity-[0.5] flex items-center max-w-[369px] w-full xl:max-w-[437px] h-[57px] mx-auto xl:h-[clamp(4vh,6vh,57px)] border border-white backdrop-blur-[7.1px] rounded-2xl"
               />
               <input
                 type="text"
@@ -262,12 +264,12 @@ export default function Home() {
                 className="mt-3 outline-none!  max-xl:max-w-[369px] text-white px-7 placeholder:text-[18px] text-[18px] placeholder:text-white placeholder:opacity-[0.5] flex items-center max-w-[369px] w-full xl:max-w-[437px] h-[57px] mx-auto xl:h-[clamp(4vh,6vh,57px)] border border-white backdrop-blur-[7.1px] rounded-2xl"
               />
               <button
-                className={`${styles.linear_button} max-xl:max-w-[369px] max-xl:w-full max-xl:mb-2 hover:opacity-70 hover:cursor-pointer text-[clamp(14px,2vh,18px)] font-normal  text-white w-[437px] mt-7 items-center mx-auto flex justify-center text-center h-[57px]  xl:h-[clamp(4vh,6vh,57px)]`}
+                className={`${styles.linear_button} max-w-[369px] w-full max-xl:mb-2 hover:opacity-70 hover:cursor-pointer text-[clamp(14px,2vh,18px)] font-normal  text-white w-[437px] mt-7 items-center mx-auto flex justify-center text-center h-[57px]  xl:h-[clamp(4vh,6vh,57px)]`}
               >
                 {texts.buttons.getMySpot}
               </button>
-            </div>
-            <p className="xl:my-[3vh] max-xl:my-8 font-light leading-[17px] text-center text-[14px] text-white max-w-[310px] mx-auto">
+            </form>
+            <p className="xl:my-[3vh] my-8 font-light leading-[17px] text-center text-[14px] text-white max-w-[310px] mx-auto">
               {texts.legal.agreeToTerms}{' '}
               <span
                 onClick={() => {
@@ -290,6 +292,7 @@ export default function Home() {
             </p>
           </div>
         </div>
+        {/* form */}
         <div className="xl:hidden h-[420px] relative z-3">
           <div className="absolute z-1 top-[70px] left-[-100px] h-[362px] w-[150vw] bg-[#131313] rotate-[-5.36deg]"></div>
 
@@ -334,7 +337,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex-1 relative max-xl:h-[667px]">
+        <div className="flex-1 relative xl:h-auto h-[667px]">
           <Image
             width={700}
             height={1100}
@@ -364,7 +367,7 @@ export default function Home() {
           </p>
         </div>
         <WaveRevealSVG />
-        <div className="xl:hidden opacity-50 mb-[100px] grid grid-cols-1 gap-[20px]">
+        <div className="xl:hidden opacity-50 mb-[100px] grid grid-cols-1 gap-5">
           <div>
             <div className="flex justify-center items-center">
               <svg
@@ -416,7 +419,7 @@ export default function Home() {
         44 Online now
       </span>
       <div
-        className={`max-xl:hidden xl:bottom-10 opacity-50 gap-10 xl:right-[17vw] w-screen xl:fixed xl:z-10 flex items-center justify-end`}
+        className={`xl:flex hidden xl:bottom-10 opacity-50 gap-10 xl:right-[17vw] w-screen xl:fixed xl:z-10  items-center justify-end`}
       >
         <div className="flex flex-none items-center">
           <svg

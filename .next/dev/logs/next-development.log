@@ -1,10 +1,246 @@
-[00:00:05.100] Server  LOG      ✓ Ready in 3.7s
-[00:00:11.134] Server  LOG      ○ Compiling / ...
-[00:00:23.553] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:24.327] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:04.262] Server  LOG      ✓ Ready in 3s
+[00:01:08.882] Server  LOG      ○ Compiling / ...
+[00:01:17.781] Server  WARN     ⚠ Cross origin request detected from picky-vanda-shiftiest.ngrok-free.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:01:19.766] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:19.766] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:01:20.221] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:20.221] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:24.327] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:24.327] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:00:24.327] Browser WARN    Image with src "/images/fire_1f525.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:25.898] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:01:20.221] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:20.221] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:01:21.389] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:01:52.443] Server  LOG      ✓ Compiled in 423ms
+[00:02:20.152] Server  LOG      ✓ Compiled in 385ms
+[00:02:43.645] Server  LOG      ✓ Compiled in 466ms
+[00:03:13.148] Server  LOG      ✓ Compiled in 501ms
+[00:04:34.456] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:34.456] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:04:35.179] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                  <Home params={Promise} searchParams={Promise}>
+                    <div className="xl:overflo...">
+                      <div>
+                      <div className="invisible ...">
+                        <p>
+                        <p>
+                        <p>
+                        <p>
+                        <p>
+                        <img>
+                        <div>
+                        <div>
+                        <div className="xl:w-[546p...">
+                          <Video>
+                          <div>
+                          <div className="relative z-2">
+                            <div>
+                            <div>
+                            <p>
+                            <p>
+                            <p>
+                            <div className="xl:mt-5 mt...">
+                              <input
+                                type="email"
+                                placeholder="Email Address"
+                                className="mt-3 outline-none!  max-xl:w-full text-white px-7 placeholder:text-[18px] t..."
+-                               __gchrome_uniqueid="1"
+                              >
+                              <input
+                                type="text"
+                                placeholder="Referal Code (Optional)"
+                                className="mt-3 outline-none!  max-xl:max-w-[369px] text-white px-7 placeholder:text-[..."
+-                               __gchrome_uniqueid="2"
+                              >
+                              ...
+                            ...
+                        ...
+                      ...
+              ...
+            ...
+
+[00:04:35.179] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:35.179] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:04:59.191] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                  <Home params={Promise} searchParams={Promise}>
+                    <div className="xl:overflo...">
+                      <div>
+                      <div className="invisible ...">
+                        <p>
+                        <p>
+                        <p>
+                        <p>
+                        <p>
+                        <img>
+                        <div>
+                        <div>
+                        <div className="xl:w-[546p...">
+                          <Video>
+                          <div>
+                          <div className="relative z-2">
+                            <div>
+                            <div>
+                            <p>
+                            <p>
+                            <p>
+                            <div className="xl:mt-5 mt...">
+                              <input
+                                type="email"
+                                placeholder="Email Address"
+                                className="mt-3 outline-none!  max-xl:w-full text-white px-7 placeholder:text-[18px] t..."
+-                               __gchrome_uniqueid="1"
+                              >
+                              <input
+                                type="text"
+                                placeholder="Referal Code (Optional)"
+                                className="mt-3 outline-none!  max-xl:max-w-[369px] text-white px-7 placeholder:text-[..."
+-                               __gchrome_uniqueid="2"
+                              >
+                              ...
+                            ...
+                        ...
+                      ...
+              ...
+            ...
+
+[00:04:59.191] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:59.191] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:05:13.045] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                  <Home params={Promise} searchParams={Promise}>
+                    <div className="xl:overflo...">
+                      <div>
+                      <div className="invisible ...">
+                        <p>
+                        <p>
+                        <p>
+                        <p>
+                        <p>
+                        <img>
+                        <div>
+                        <div>
+                        <div className="xl:w-[546p...">
+                          <Video>
+                          <div>
+                          <div className="relative z-2">
+                            <div>
+                            <div>
+                            <p>
+                            <p>
+                            <p>
+                            <div className="xl:mt-5 mt...">
+                              <input
+                                type="email"
+                                placeholder="Email Address"
+                                className="mt-3 outline-none!  max-xl:w-full text-white px-7 placeholder:text-[18px] t..."
+-                               __gchrome_uniqueid="1"
+                              >
+                              <input
+                                type="text"
+                                placeholder="Referal Code (Optional)"
+                                className="mt-3 outline-none!  max-xl:max-w-[369px] text-white px-7 placeholder:text-[..."
+-                               __gchrome_uniqueid="2"
+                              >
+                              ...
+                            ...
+                        ...
+                      ...
+              ...
+            ...
+
+[00:05:13.045] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:05:13.045] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:07:10.060] Server  LOG      ✓ Compiled in 170ms
+[00:09:38.244] Server  LOG      ✓ Compiled in 170ms
+[00:10:25.643] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:25.643] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:10:25.643] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:25.643] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:10:27.488] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:11:39.281] Server  LOG      ✓ Compiled in 316ms
+[00:11:52.359] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:52.359] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:11:52.359] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:11:52.359] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:11:54.174] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:12:36.186] Server  LOG      ✓ Compiled in 283ms
+[00:12:47.644] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:47.644] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:12:47.644] Browser WARN    Image with src "/images/screenshot4.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:12:47.644] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:47.644] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:12:49.647] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:13:31.960] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:31.960] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:13:31.960] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:31.960] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:13:33.887] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:14:34.928] Server  LOG      ✓ Compiled in 405ms

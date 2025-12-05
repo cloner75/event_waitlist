@@ -668,6 +668,14 @@
     margin-inline: auto;
   }
 
+  .my-8 {
+    margin-block: calc(var(--spacing) * 8);
+  }
+
+  .-mt-2\.5 {
+    margin-top: calc(var(--spacing) * -2.5);
+  }
+
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -702,6 +710,10 @@
 
   .mb-\[100px\] {
     margin-bottom: 100px;
+  }
+
+  .block {
+    display: block;
   }
 
   .flex {
@@ -752,10 +764,6 @@
     aspect-ratio: 1;
   }
 
-  .h-\[3\.5vh\] {
-    height: 3.5vh;
-  }
-
   .h-\[17px\] {
     height: 17px;
   }
@@ -800,6 +808,10 @@
     height: 420px;
   }
 
+  .h-\[667px\] {
+    height: 667px;
+  }
+
   .h-auto {
     height: auto;
   }
@@ -826,6 +838,10 @@
 
   .w-1\/6 {
     width: 16.6667%;
+  }
+
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
 
   .w-12 {
@@ -1050,6 +1066,10 @@
     gap: calc(var(--spacing) * 3);
   }
 
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
@@ -1211,6 +1231,10 @@
     padding-bottom: calc(var(--spacing) * 15);
   }
 
+  .pb-25 {
+    padding-bottom: calc(var(--spacing) * 25);
+  }
+
   .pb-\[25px\] {
     padding-bottom: 25px;
   }
@@ -1225,10 +1249,6 @@
 
   .text-\[2\.3vh\] {
     font-size: 2.3vh;
-  }
-
-  .text-\[2vh\] {
-    font-size: 2vh;
   }
 
   .text-\[10px\] {
@@ -1509,12 +1529,6 @@
   }
 
   @media not (min-width: 80rem) {
-    .max-xl\:my-8 {
-      margin-block: calc(var(--spacing) * 8);
-    }
-  }
-
-  @media not (min-width: 80rem) {
     .max-xl\:mb-2 {
       margin-bottom: calc(var(--spacing) * 2);
     }
@@ -1553,12 +1567,6 @@
   @media not (min-width: 80rem) {
     .max-xl\:px-5 {
       padding-inline: calc(var(--spacing) * 5);
-    }
-  }
-
-  @media not (min-width: 80rem) {
-    .max-xl\:pb-25 {
-      padding-bottom: calc(var(--spacing) * 25);
     }
   }
 
@@ -1629,8 +1637,20 @@
   }
 
   @media (min-width: 80rem) {
+    .xl\:h-auto {
+      height: auto;
+    }
+  }
+
+  @media (min-width: 80rem) {
     .xl\:h-screen {
       height: 100vh;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .xl\:w-\[3\.5vh\] {
+      width: 3.5vh;
     }
   }
 
@@ -1679,6 +1699,12 @@
   @media (min-width: 80rem) {
     .xl\:text-start {
       text-align: start;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .xl\:text-\[2vh\] {
+      font-size: 2vh;
     }
   }
 

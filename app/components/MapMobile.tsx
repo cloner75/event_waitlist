@@ -30,13 +30,13 @@ export default function MapMobile() {
   const rightX = useTransform(scrollYProgress, [1, 0], ['200px', '0px']);
 
   return (
-    <div className="xl:hidden">
+    <div className="xl:hidden block">
       <div ref={parentRef} className="h-full w-full relative z-3 xl:hidden">
         <div className="fade-up absolute left-1/2 -translate-x-1/2 leading-[60px] font-black top-[50px] text-white text-center max-w-[250px] text-[48px]">
           Dopins
           <br /> are just
           <br /> beginning
-          <div className="text-[16px] font-light w-[250px] mt-[-10px] ">
+          <div className="text-[16px] font-light w-[250px] -mt-2.5 ">
             Where Every Location Has a Story
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function MapMobile() {
           whileInView={{ scale: 1 }}
           animate={{ y: [-0, -12, 0] }}
           transition={{
-            scale: { duration: 1, ease: 'easeOut', delay: 1 },
+            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 1 },
             y: {
               duration: 7,
               repeat: Infinity,
@@ -67,7 +67,7 @@ export default function MapMobile() {
           whileInView={{ scale: 1 }}
           animate={{ y: [-0, -12, 0] }}
           transition={{
-            scale: { duration: 1, ease: 'easeOut', delay: 1 },
+            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 1 },
             y: {
               duration: 8,
               repeat: Infinity,
@@ -88,7 +88,7 @@ export default function MapMobile() {
           whileInView={{ scale: 1 }}
           animate={{ y: [-0, -12, 0] }}
           transition={{
-            scale: { duration: 1, ease: 'easeOut', delay: 1 },
+            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 1 },
             y: {
               duration: 9,
               repeat: Infinity,
@@ -109,7 +109,7 @@ export default function MapMobile() {
           whileInView={{ scale: 1 }}
           animate={{ y: [-0, -12, 0] }}
           transition={{
-            scale: { duration: 1, ease: 'easeOut', delay: 1 },
+            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 1 },
             y: {
               duration: 6,
               repeat: Infinity,

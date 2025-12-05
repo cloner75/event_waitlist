@@ -27,7 +27,7 @@ export function WaveRevealSVG() {
         height={700}
       />
 
-      <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-3 max-w-[335px] mx-auto text-center leading-[38px] text-white text-[32px] font-normal ">
+      <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-3 w-full max-w-[335px] mx-auto text-center leading-[38px] text-white text-[32px] font-normal ">
         This isn’t another random app—this is about <b>ME and MY CITY.</b>
       </p>
     </div>
