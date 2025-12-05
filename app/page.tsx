@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import texts from './../../public/text.json';
+import texts from './../public/text.json';
 import Video from './components/Video';
 import styles from './page.module.css';
 import { useEffect, useRef, useState } from 'react';

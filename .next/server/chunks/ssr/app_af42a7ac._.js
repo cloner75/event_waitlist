@@ -1,0 +1,3 @@
+module.exports=[92958,a=>{a.v({className:"sfprodisplay_a6c1f027-module__N4sX3q__className"})},33290,a=>{"use strict";var b=a.i(7997),c=a.i(92958);let d={className:c.default.className,style:{fontFamily:"'SFProDisplay', 'SFProDisplay Fallback'"}};function e({children:a}){return(0,b.jsx)("html",{lang:"en",children:(0,b.jsx)("body",{className:`${d.className} bg-[#161616] overflow-x-hidden`,children:a})})}null!=c.default.variable&&(d.variable=c.default.variable),a.s(["default",()=>e,"metadata",0,{title:"Dopin Waitlist",description:"Dopin - Every location has story"}],33290)}];
+
+//# sourceMappingURL=app_af42a7ac._.js.map

@@ -1,0 +1,87 @@
+/* [project]/app/sfprodisplay_a6c1f027.module.css [app-client] (css) */
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../media/SFProDisplay_BlackItalic-s.p.0fe626fa.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../media/SFProDisplay_Bold-s.p.de55f8b2.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../media/SFProDisplay_HeavyItalic-s.p.2ffebd60.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../media/SFProDisplay_LightItalic-s.p.dcbe6ff0.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../media/SFProDisplay_Medium-s.p.0e8f9144.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../media/SFProDisplay_Regular-s.p.ac1dabd9.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../media/SFProDisplay_SemiboldItalic-s.p.dcb12559.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../media/SFProDisplay_ThinItalic-s.p.971c8834.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url("../media/SFProDisplay_UltralightItalic-s.p.baa678e1.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: SFProDisplay Fallback;
+  src: local(Arial);
+  ascent-override: 101.52%;
+  descent-override: 25.72%;
+  line-gap-override: 0.0%;
+  size-adjust: 93.79%;
+}
+
+.sfprodisplay_a6c1f027-module__N4sX3q__className {
+  font-family: SFProDisplay, SFProDisplay Fallback;
+}
+
+/*# sourceMappingURL=app_sfprodisplay_a6c1f027_module_css_bad6b30c._.single.css.map*/

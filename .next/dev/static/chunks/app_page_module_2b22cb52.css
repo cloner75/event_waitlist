@@ -1,0 +1,41 @@
+/* [project]/app/page.module.css [app-client] (css) */
+.page-module__E0kJGG__badge {
+  color: #fff;
+  text-shadow: 0 0 21.7px #fff9;
+  background: #ffffff24;
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+  width: 13vh;
+  height: 5vh;
+  font-size: 2.5vh;
+  font-weight: 700;
+  display: flex;
+  box-shadow: 0 0 42.8px #ffffff42;
+}
+
+.page-module__E0kJGG__linear_button {
+  background: linear-gradient(140.98deg, #ec30e4 9.6%, #581dff 93.68%);
+  border-radius: 16px;
+}
+
+.page-module__E0kJGG__linear_time {
+  background: linear-gradient(181.02deg, #ec30e4 7.07%, #581dff 97.64%);
+  border-radius: 0 130px 130px 0;
+  width: 292px;
+  box-shadow: 0 4px 65px #d82de85c;
+}
+
+.page-module__E0kJGG__text_gradient {
+  background: linear-gradient(144.18deg, #fff 19.09%, #ec30e4 94.23%);
+  -webkit-text-fill-color: transparent;
+  color: #0000;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.page-module__E0kJGG__image_shadow {
+  box-shadow: 0 4px 147.1px #00000040;
+}
+
+/*# sourceMappingURL=app_page_module_2b22cb52.css.map*/
