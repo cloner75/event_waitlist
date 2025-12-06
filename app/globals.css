@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@tailwind utilities;
 
 body {
   /* font-family: 'SF Pro Rounded'; */
@@ -102,4 +103,74 @@ body {
   background-size: 200% 100%;
   -webkit-background-clip: text;
   animation: shimmerWave 2.5s linear infinite;
+}
+@keyframes loadingBar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+.loading-bar {
+  animation: loadingBar 1.5s linear infinite;
+}
+
+@layer utilities {
+  .text-input {
+    @apply mt-3 outline-none! w-full max-w-[437px] xl:max-w-[437px] h-[57px] mx-auto border border-white rounded-2xl px-7 text-white placeholder-white placeholder:opacity-50 text-[18px] bg-[rgba(217,217,217,0.14)] flex items-center backdrop-blur-[7.1px];
+  }
+
+  .otp-input {
+    @apply outline-none flex-1 w-full text-white h-[57px]
+         border border-white backdrop-blur-[7.1px] rounded-2xl 
+         placeholder:text-[20px] text-[20px] bg-[rgba(217,217,217,0.14)] 
+         placeholder:text-white placeholder:opacity-[0.5] text-center;
+  }
+
+  .otp-input.error-text {
+    @apply border-[#FF395D]! text-[#FF395D]!;
+  }
+
+  .outline_button {
+    @apply max-w-[437px] xl:max-w-[437px] w-full h-[57px] mx-auto 
+     border border-white text-[18px] rounded-2xl font-normal text-white 
+      items-center relative flex justify-center bg-transparent;
+  }
+  .linear_button {
+    @apply max-w-[437px] xl:max-w-[437px] w-full h-[57px] mx-auto
+         text-[18px] relative rounded-2xl font-normal text-white  items-center flex justify-center;
+
+    background: linear-gradient(140.98deg, #ec30e4 9.6%, #581dff 93.68%);
+  }
+  .secondary_button {
+    @apply bg-[#581DFF] max-w-[437px] xl:max-w-[437px] w-full h-[57px] mx-auto
+         text-[18px] relative rounded-2xl font-normal text-white items-center flex justify-center;
+  }
+  .waiting {
+    @apply relative  text-transparent opacity-80;
+    background: #6d6d6d;
+  }
+
+  .waiting::after {
+    content: '';
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
+         w-5 h-5 border-3 border-white border-t-transparent rounded-full animate-spin;
+  }
+
+  .outline_button:hover {
+    cursor: pointer;
+  }
+  .secondary_button:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 147.1px rgba(0, 0, 0, 0.25);
+  }
+  .linear_button:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 147.1px rgba(0, 0, 0, 0.25);
+  }
+
+  .otp-input:focus {
+    outline: none !important;
+  }
 }

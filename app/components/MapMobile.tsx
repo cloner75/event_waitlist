@@ -32,14 +32,21 @@ export default function MapMobile() {
   return (
     <div className="xl:hidden block">
       <div ref={parentRef} className="h-full w-full relative z-3 xl:hidden">
-        <div className="fade-up absolute left-1/2 -translate-x-1/2 leading-[60px] font-black top-[50px] text-white text-center max-w-[250px] text-[48px]">
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            scale: { duration: 1, ease: 'easeOut', delay: 0.5, repeat: 0 },
+          }}
+          className="fade-up absolute left-1/2 -translate-x-1/2 leading-[60px] font-black top-[50px] text-white text-center max-w-[250px] text-[48px]"
+        >
           Dopins
           <br /> are just
           <br /> beginning
           <div className="text-[16px] font-light w-[250px] -mt-2.5 ">
             Where Every Location Has a Story
           </div>
-        </div>
+        </motion.div>
         {/* girl2 */}
         <motion.img
           src="/images/2.jpg"
@@ -48,7 +55,7 @@ export default function MapMobile() {
           whileInView={{ scale: 1 }}
           animate={{ y: [-0, -12, 0] }}
           transition={{
-            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 1 },
+            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 0 },
             y: {
               duration: 7,
               repeat: Infinity,
@@ -67,7 +74,7 @@ export default function MapMobile() {
           whileInView={{ scale: 1 }}
           animate={{ y: [-0, -12, 0] }}
           transition={{
-            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 1 },
+            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 0 },
             y: {
               duration: 8,
               repeat: Infinity,
@@ -88,7 +95,7 @@ export default function MapMobile() {
           whileInView={{ scale: 1 }}
           animate={{ y: [-0, -12, 0] }}
           transition={{
-            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 1 },
+            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 0 },
             y: {
               duration: 9,
               repeat: Infinity,
@@ -109,7 +116,7 @@ export default function MapMobile() {
           whileInView={{ scale: 1 }}
           animate={{ y: [-0, -12, 0] }}
           transition={{
-            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 1 },
+            scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 0 },
             y: {
               duration: 6,
               repeat: Infinity,
@@ -125,33 +132,33 @@ export default function MapMobile() {
 
         <motion.img
           src="/images/logo-pin.png"
-          className="z-1 absolute top-[150px] w-[80px] aspect-auto right-[12px] "
+          className="z-1 absolute top-[150px] w-20 aspect-auto right-3 "
         />
         <motion.img
           src="/images/logo-pin.png"
-          className="z-1 absolute top-[240px] w-[80px] aspect-auto left-[12px] "
+          className="z-1 absolute top-60 w-20 aspect-auto left-3"
         />
 
         <motion.img
           src="/images/logo-pin.png"
-          className="z-1 absolute top-[270px] w-[80px] aspect-auto left-1/2 -translate-x-1/2 "
+          className="z-1 absolute top-[270px] w-20 aspect-auto left-1/2 -translate-x-1/2 "
         />
         <div className="absolute top-[600px] w-full left-0">
           {/* عکس چپ */}
           <motion.img
             src="/images/screenshot1.jpg"
-            className="image_shadow absolute  w-[119px] h-[256px] rounded-[27px] left-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="image_shadow absolute  w-[119px] h-64 rounded-[27px] left-1/2 -translate-x-1/2 -translate-y-1/2"
             style={{ scale, x: leftX }}
           />
           {/* عکس راست */}
           <motion.img
             src="/images/screenshot3.png"
-            className="image_shadow absolute  w-[119px] h-[256px] rounded-[27px] left-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="image_shadow absolute  w-[119px] h-64 rounded-[27px] left-1/2 -translate-x-1/2 -translate-y-1/2"
             style={{ scale, x: rightX }}
           />
           <motion.img
             src="/images/screenshot2.jpg"
-            className="image_shadow absolute aspect-119/256 w-[176px] h-[382px] left-1/2 -translate-x-1/2 rounded-[27px] -translate-y-1/2"
+            className="image_shadow absolute aspect-119/256 w-44 h-[382px] left-1/2 -translate-x-1/2 rounded-[27px] -translate-y-1/2"
             style={{ scale, width: width, height: height }}
           />
         </div>

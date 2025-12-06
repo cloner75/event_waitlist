@@ -197,8 +197,8 @@ export default function Modal({
     <div
       className={`top-0 left-0 backdrop-blur-3xl bg-[#11111183] py-[27px] h-screen w-screen fixed z-100`}
     >
-      <div className="bg-[#0B0B0B] flex-nowrap flex-row mx-auto h-full overflow-hidden rounded-[51px] p-[27] xl:max-w-[918px] max-w-[90%]">
-        <div className="flex flex-none gap-10 items-center">
+      <div className="bg-[#0B0B0B] h-full mx-auto overflow-hidden rounded-[51px] p-[27] xl:max-w-[918px] max-w-[90%]">
+        <div className="flex flex-none mb-[50px] gap-10 items-center">
           <div className="cursor-pointer" onClick={onClose}>
             <Image
               alt=""
@@ -212,8 +212,8 @@ export default function Modal({
             TERMS OF USE — Dopin Early Access Waitlist
           </div>
         </div>
-        <div className="flex-1 h-full xl:p-[25px] m-[25px] overflow-scroll">
-          <pre className=" font-light text-[16px] pb-[25px] whitespace-pre-wrap break-words w-full text-white font-[SFProDisplay,_SFProDisplay_Fallback]">
+        <div className="h-[85%] overflow-y-scroll">
+          <pre className="xl:px-[34px] px-[25px] pb-[100px] font-light text-[16px] whitespace-pre-wrap break-words w-full text-white font-[SFProDisplay,_SFProDisplay_Fallback]">
             {name == 'privacy' ? privayText : termsText}
           </pre>
         </div>

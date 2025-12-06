@@ -1,23 +1,12 @@
-[00:00:04.262] Server  LOG      ✓ Ready in 3s
-[00:01:08.882] Server  LOG      ○ Compiling / ...
-[00:01:17.781] Server  WARN     ⚠ Cross origin request detected from picky-vanda-shiftiest.ngrok-free.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:07.699] Server  LOG      ✓ Ready in 5.5s
+[00:00:07.707] Server  WARN     ⚠ Cross origin request detected from picky-vanda-shiftiest.ngrok-free.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:01:19.766] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:19.766] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:01:20.221] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:20.221] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:11.230] Server  LOG      ○ Compiling / ...
+[00:00:37.095] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:37.207] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:37.207] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:01:20.221] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:20.221] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:01:21.389] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:01:52.443] Server  LOG      ✓ Compiled in 423ms
-[00:02:20.152] Server  LOG      ✓ Compiled in 385ms
-[00:02:43.645] Server  LOG      ✓ Compiled in 466ms
-[00:03:13.148] Server  LOG      ✓ Compiled in 501ms
-[00:04:34.456] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:34.456] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:04:35.179] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:37.207] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -30,58 +19,40 @@ It can also happen if the client has a browser extension installed which messes 
 %s%s https://react.dev/link/hydration-mismatch 
 
   ...
-    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
-              <SegmentViewNode type="page" pagePath="page.tsx">
-                <SegmentTrieNode>
-                <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
-                  <Home params={Promise} searchParams={Promise}>
-                    <div className="xl:overflo...">
-                      <div>
-                      <div className="invisible ...">
-                        <p>
-                        <p>
-                        <p>
-                        <p>
-                        <p>
-                        <img>
-                        <div>
-                        <div>
-                        <div className="xl:w-[546p...">
-                          <Video>
-                          <div>
-                          <div className="relative z-2">
-                            <div>
-                            <div>
-                            <p>
-                            <p>
-                            <p>
-                            <div className="xl:mt-5 mt...">
-                              <input
-                                type="email"
-                                placeholder="Email Address"
-                                className="mt-3 outline-none!  max-xl:w-full text-white px-7 placeholder:text-[18px] t..."
--                               __gchrome_uniqueid="1"
-                              >
-                              <input
-                                type="text"
-                                placeholder="Referal Code (Optional)"
-                                className="mt-3 outline-none!  max-xl:max-w-[369px] text-white px-7 placeholder:text-[..."
--                               __gchrome_uniqueid="2"
-                              >
-                              ...
-                            ...
-                        ...
-                      ...
-              ...
-            ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="sfprodisplay_a6c1f027-module__N4sX3q__className bg-[#161616] overflow-x-hidden"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
 
-[00:04:35.179] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:35.179] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:04:59.191] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:37.207] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:37.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:37.613] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:37.613] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:37.821] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:39.054] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:02:17.396] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:17.396] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -94,58 +65,36 @@ It can also happen if the client has a browser extension installed which messes 
 %s%s https://react.dev/link/hydration-mismatch 
 
   ...
-    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
-              <SegmentViewNode type="page" pagePath="page.tsx">
-                <SegmentTrieNode>
-                <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
-                  <Home params={Promise} searchParams={Promise}>
-                    <div className="xl:overflo...">
-                      <div>
-                      <div className="invisible ...">
-                        <p>
-                        <p>
-                        <p>
-                        <p>
-                        <p>
-                        <img>
-                        <div>
-                        <div>
-                        <div className="xl:w-[546p...">
-                          <Video>
-                          <div>
-                          <div className="relative z-2">
-                            <div>
-                            <div>
-                            <p>
-                            <p>
-                            <p>
-                            <div className="xl:mt-5 mt...">
-                              <input
-                                type="email"
-                                placeholder="Email Address"
-                                className="mt-3 outline-none!  max-xl:w-full text-white px-7 placeholder:text-[18px] t..."
--                               __gchrome_uniqueid="1"
-                              >
-                              <input
-                                type="text"
-                                placeholder="Referal Code (Optional)"
-                                className="mt-3 outline-none!  max-xl:max-w-[369px] text-white px-7 placeholder:text-[..."
--                               __gchrome_uniqueid="2"
-                              >
-                              ...
-                            ...
-                        ...
-                      ...
-              ...
-            ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="sfprodisplay_a6c1f027-module__N4sX3q__className bg-[#161616] overflow-x-hidden"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
 
-[00:04:59.191] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:59.191] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:05:13.045] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:02:17.396] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:02:18.659] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:04:03.767] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:03.767] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:04:03.767] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -158,89 +107,1216 @@ It can also happen if the client has a browser extension installed which messes 
 %s%s https://react.dev/link/hydration-mismatch 
 
   ...
-    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
-      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
-              <SegmentViewNode type="page" pagePath="page.tsx">
-                <SegmentTrieNode>
-                <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
-                  <Home params={Promise} searchParams={Promise}>
-                    <div className="xl:overflo...">
-                      <div>
-                      <div className="invisible ...">
-                        <p>
-                        <p>
-                        <p>
-                        <p>
-                        <p>
-                        <img>
-                        <div>
-                        <div>
-                        <div className="xl:w-[546p...">
-                          <Video>
-                          <div>
-                          <div className="relative z-2">
-                            <div>
-                            <div>
-                            <p>
-                            <p>
-                            <p>
-                            <div className="xl:mt-5 mt...">
-                              <input
-                                type="email"
-                                placeholder="Email Address"
-                                className="mt-3 outline-none!  max-xl:w-full text-white px-7 placeholder:text-[18px] t..."
--                               __gchrome_uniqueid="1"
-                              >
-                              <input
-                                type="text"
-                                placeholder="Referal Code (Optional)"
-                                className="mt-3 outline-none!  max-xl:max-w-[369px] text-white px-7 placeholder:text-[..."
--                               __gchrome_uniqueid="2"
-                              >
-                              ...
-                            ...
-                        ...
-                      ...
-              ...
-            ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="sfprodisplay_a6c1f027-module__N4sX3q__className bg-[#161616] overflow-x-hidden"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
 
-[00:05:13.045] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:05:13.045] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:07:10.060] Server  LOG      ✓ Compiled in 170ms
-[00:09:38.244] Server  LOG      ✓ Compiled in 170ms
-[00:10:25.643] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:25.643] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:04:03.767] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:04:04.915] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:10:25.643] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:25.643] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:10:27.488] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:04:10.696] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:10.696] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:11:39.281] Server  LOG      ✓ Compiled in 316ms
-[00:11:52.359] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:52.359] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:04:10.696] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:04:11.721] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:11:52.359] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:11:52.359] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:11:54.174] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:04:48.975] Server  LOG      ✓ Compiled in 783ms
+[00:04:59.918] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:59.918] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:12:36.186] Server  LOG      ✓ Compiled in 283ms
-[00:12:47.644] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:47.644] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:04:59.918] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:05:01.443] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:12:47.644] Browser WARN    Image with src "/images/screenshot4.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:07:18.859] Server  LOG      ✓ Compiled in 776ms
+[00:08:14.681] Browser LOG     Completed: NRD1RE
+[00:08:15.985] Server  LOG     {}
+[00:09:27.819] Server  LOG      ✓ Compiled in 379ms
+[00:11:25.031] Server  LOG      ✓ Compiled in 185ms
+[00:11:44.231] Server  LOG      ✓ Compiled in 271ms
+[00:11:52.366] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:52.366] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:12:47.644] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:12:47.644] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:12:49.647] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:11:52.366] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:11:53.846] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:13:31.960] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:31.960] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:12:25.712] Server  LOG      ✓ Compiled in 769ms
+[00:12:37.368] Server  LOG      ✓ Compiled in 499ms
+[00:12:50.352] Server  LOG      ✓ Compiled in 366ms
+[00:13:09.883] Server  LOG      ✓ Compiled in 601ms
+[00:13:16.512] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:13:16.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:16.596] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:13:31.960] Browser WARN    Image with src "/images/Dopin-white.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:13:31.960] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:13:33.887] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:13:16.596] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:13:17.886] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:14:34.928] Server  LOG      ✓ Compiled in 405ms
+[00:17:22.219] Server  LOG      ✓ Compiled in 3.8s
+[00:18:53.356] Server  LOG      ✓ Compiled in 551ms
+[00:19:04.731] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:04.731] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:19:04.731] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:19:05.721] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:19:40.218] Server  LOG      ✓ Compiled in 349ms
+[00:19:51.926] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:51.926] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:19:51.926] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:19:53.440] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:20:34.021] Server  LOG      ✓ Compiled in 452ms
+[00:20:46.237] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:46.237] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:20:46.237] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:20:48.017] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:21:05.475] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:05.475] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:21:05.475] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:21:07.139] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:21:31.851] Server  LOG      ✓ Compiled in 374ms
+[00:21:44.962] Server  LOG      ✓ Compiled in 497ms
+[00:21:58.253] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:58.253] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:21:58.253] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:21:59.206] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:22:07.984] Server  LOG      ✓ Compiled in 498ms
+[00:22:49.195] Server  LOG      ✓ Compiled in 740ms
+[00:23:45.938] Server  LOG      ✓ Compiled in 553ms
+[00:23:51.507] Server  LOG      ✓ Compiled in 387ms
+[00:23:58.697] Server  LOG      ✓ Compiled in 451ms
+[00:24:05.311] Server  LOG      ✓ Compiled in 491ms
+[00:24:11.315] Server  LOG      ✓ Compiled in 389ms
+[00:24:21.467] Server  LOG      ✓ Compiled in 263ms
+[00:24:33.141] Server  LOG      ✓ Compiled in 299ms
+[00:24:41.051] Server  LOG      ✓ Compiled in 286ms
+[00:24:54.247] Server  LOG      ✓ Compiled in 376ms
+[00:27:26.775] Server  LOG      ✓ Compiled in 602ms
+[00:27:38.142] Server  LOG      ✓ Compiled in 262ms
+[00:28:01.741] Server  LOG      ✓ Compiled in 283ms
+[00:28:12.122] Server  LOG      ✓ Compiled in 958ms
+[00:28:45.190] Server  LOG      ✓ Compiled in 1155ms
+[00:30:14.486] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:30:16.981] Server  LOG      ○ Compiling /_not-found/page ...
+[00:30:37.999] Server  LOG      ✓ Compiled in 725ms
+[00:32:23.222] Server  LOG      ✓ Compiled in 343ms
+[00:32:58.349] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:58.349] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:32:58.349] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:33:38.844] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:01:04.694] Server  LOG      ✓ Compiled in 286ms
+[01:01:09.378] Server  LOG      ✓ Compiled in 139ms
+[01:01:49.448] Browser LOG     Completed: SQXVJH
+[01:01:57.557] Server  LOG     {}
+[01:01:59.801] Server  LOG     {}
+[01:02:43.989] Browser LOG     Completed: 3N91KX
+[01:02:44.668] Server  LOG     {}
+[01:03:37.656] Server  LOG      ✓ Compiled in 620ms
+[01:05:15.218] Server  LOG      ✓ Compiled in 193ms
+[01:05:33.069] Browser LOG     Completed: J5C8A9
+[01:05:34.984] Server  LOG     {}
+[01:05:36.450] Server  LOG     {}
+[01:08:15.530] Server  LOG      ✓ Compiled in 1017ms
+[01:10:10.147] Server  LOG      ✓ Compiled in 229ms
+[01:10:16.082] Server  LOG      ✓ Compiled in 483ms
+[01:10:28.969] Server  LOG      ✓ Compiled in 387ms
+[01:11:51.708] Server  LOG      ✓ Compiled in 350ms
+[01:11:53.768] Server  LOG     {}
+[01:11:53.810] Server  LOG     {}
+[01:12:27.701] Server  LOG      ✓ Compiled in 1888ms
+[01:12:46.931] Server  LOG      ✓ Compiled in 203ms
+[01:13:01.608] Server  LOG      ✓ Compiled in 154ms
+[01:13:39.396] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:13:39.396] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:13:39.396] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:14:05.602] Server  LOG      ✓ Compiled in 219ms
+[01:14:14.912] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:14.912] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:14:14.912] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:14:14.912] Browser LOG     {"_email":"kavianpoormajid@gmail.com","accesstoken":null}
+[01:15:14.889] Browser LOG     Completed: EPY1TR
+[01:15:17.107] Server  LOG     {}
+[01:15:18.391] Server  LOG     {}
+[01:15:52.401] Server  LOG      ✓ Compiled in 183ms
+[01:16:13.213] Server  LOG      ✓ Compiled in 278ms
+[01:16:28.508] Server  LOG      ✓ Compiled in 198ms
+[01:16:31.461] Server  LOG      ✓ Compiled in 351ms
+[01:16:52.356] Server  LOG      ✓ Compiled in 249ms
+[01:17:10.109] Server  LOG      ✓ Compiled in 657ms
+[01:17:22.330] Server  LOG     {}
+[01:17:22.544] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:17:22.544] Browser LOG     {"_email":"kavianpoormajid@gmail.com","accesstoken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTJmZmU0YTg3YjZlNjY3MzQxMzg3NjQiLCJlbWFpbCI6ImthdmlhbnBvb3JtYWppZEBnbWFpbC5jb20iLCJwcm92aWRlciI6ImZpcmViYXNlIiwic3RhdHVzIjoiYWN0aXZlIiwicm9sZSI6InVzZXIiLCJ0b2tlbl92ZXJzaW9uIjowLCJzdXNwZW5zaW9uX2hpc3RvcnkiOltdLCJpc19hY2Nlc3NfdG9rZW4iOnRydWUsImlhdCI6MTc2NTA0MTY5NiwiZXhwIjoxNzY1MTI4MDk2fQ.uP61FFIEpXtEhe41ef-_eMVl8DZq8St5zAMRJ57L_o4"}
+[01:17:22.544] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:21:21.776] Server  LOG      ✓ Compiled in 1206ms
+[01:21:22.893] Browser LOG     {"_email":"kavianpoormajid@gmail.com","accesstoken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTJmZmU0YTg3YjZlNjY3MzQxMzg3NjQiLCJlbWFpbCI6ImthdmlhbnBvb3JtYWppZEBnbWFpbC5jb20iLCJwcm92aWRlciI6ImZpcmViYXNlIiwic3RhdHVzIjoiYWN0aXZlIiwicm9sZSI6InVzZXIiLCJ0b2tlbl92ZXJzaW9uIjowLCJzdXNwZW5zaW9uX2hpc3RvcnkiOltdLCJpc19hY2Nlc3NfdG9rZW4iOnRydWUsImlhdCI6MTc2NTA0MTY5NiwiZXhwIjoxNzY1MTI4MDk2fQ.uP61FFIEpXtEhe41ef-_eMVl8DZq8St5zAMRJ57L_o4"}
+[01:21:23.559] Server  LOG     {}
+[01:21:32.582] Server  LOG      ✓ Compiled in 520ms
+[01:21:33.814] Browser LOG     {"_email":"kavianpoormajid@gmail.com","accesstoken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTJmZmU0YTg3YjZlNjY3MzQxMzg3NjQiLCJlbWFpbCI6ImthdmlhbnBvb3JtYWppZEBnbWFpbC5jb20iLCJwcm92aWRlciI6ImZpcmViYXNlIiwic3RhdHVzIjoiYWN0aXZlIiwicm9sZSI6InVzZXIiLCJ0b2tlbl92ZXJzaW9uIjowLCJzdXNwZW5zaW9uX2hpc3RvcnkiOltdLCJpc19hY2Nlc3NfdG9rZW4iOnRydWUsImlhdCI6MTc2NTA0MTY5NiwiZXhwIjoxNzY1MTI4MDk2fQ.uP61FFIEpXtEhe41ef-_eMVl8DZq8St5zAMRJ57L_o4"}
+[01:21:33.866] Server  LOG     {}
+[01:22:02.843] Server  LOG      ✓ Compiled in 262ms
+[01:22:45.981] Server  LOG      ✓ Compiled in 301ms
+[01:22:56.978] Server  LOG     {}
+[01:22:57.070] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:57.070] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:22:57.070] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:22:57.070] Browser LOG     {"_email":"kavianpoormajid@gmail.com","accesstoken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTJmZmU0YTg3YjZlNjY3MzQxMzg3NjQiLCJlbWFpbCI6ImthdmlhbnBvb3JtYWppZEBnbWFpbC5jb20iLCJwcm92aWRlciI6ImZpcmViYXNlIiwic3RhdHVzIjoiYWN0aXZlIiwicm9sZSI6InVzZXIiLCJ0b2tlbl92ZXJzaW9uIjowLCJzdXNwZW5zaW9uX2hpc3RvcnkiOltdLCJpc19hY2Nlc3NfdG9rZW4iOnRydWUsImlhdCI6MTc2NTA0MTY5NiwiZXhwIjoxNzY1MTI4MDk2fQ.uP61FFIEpXtEhe41ef-_eMVl8DZq8St5zAMRJ57L_o4"}
+[01:23:05.036] Server  LOG      ✓ Compiled in 322ms
+[01:23:40.601] Server  LOG      ✓ Compiled in 469ms
+[01:24:46.943] Server  LOG      ✓ Compiled in 568ms
+[01:25:30.011] Server  LOG      ✓ Compiled in 589ms
+[01:25:52.733] Server  LOG      ✓ Compiled in 191ms
+[01:26:01.253] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:01.399] Server  LOG     {}
+[01:26:01.491] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:26:01.491] Browser LOG     {"_email":"kavianpoormajid@gmail.com","accesstoken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTJmZmU0YTg3YjZlNjY3MzQxMzg3NjQiLCJlbWFpbCI6ImthdmlhbnBvb3JtYWppZEBnbWFpbC5jb20iLCJwcm92aWRlciI6ImZpcmViYXNlIiwic3RhdHVzIjoiYWN0aXZlIiwicm9sZSI6InVzZXIiLCJ0b2tlbl92ZXJzaW9uIjowLCJzdXNwZW5zaW9uX2hpc3RvcnkiOltdLCJpc19hY2Nlc3NfdG9rZW4iOnRydWUsImlhdCI6MTc2NTA0MTY5NiwiZXhwIjoxNzY1MTI4MDk2fQ.uP61FFIEpXtEhe41ef-_eMVl8DZq8St5zAMRJ57L_o4"}
+[01:26:37.166] Server  LOG      ✓ Compiled in 187ms
+[01:26:41.561] Server  LOG      ✓ Compiled in 266ms
+[01:27:28.474] Server  LOG      ✓ Compiled in 606ms
+[01:27:46.222] Server  LOG      ✓ Compiled in 269ms
+[01:28:17.258] Server  LOG      ✓ Compiled in 153ms
+[01:28:24.594] Server  LOG      ✓ Compiled in 180ms
+[01:28:32.959] Browser LOG     Copied to clipboard!
+[01:28:46.554] Server  LOG     {}
+[01:28:46.714] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:28:46.714] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:28:46.714] Browser LOG     {"_email":"kavianpoormajid@gmail.com","accesstoken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTJmZmU0YTg3YjZlNjY3MzQxMzg3NjQiLCJlbWFpbCI6ImthdmlhbnBvb3JtYWppZEBnbWFpbC5jb20iLCJwcm92aWRlciI6ImZpcmViYXNlIiwic3RhdHVzIjoiYWN0aXZlIiwicm9sZSI6InVzZXIiLCJ0b2tlbl92ZXJzaW9uIjowLCJzdXNwZW5zaW9uX2hpc3RvcnkiOltdLCJpc19hY2Nlc3NfdG9rZW4iOnRydWUsImlhdCI6MTc2NTA0MTY5NiwiZXhwIjoxNzY1MTI4MDk2fQ.uP61FFIEpXtEhe41ef-_eMVl8DZq8St5zAMRJ57L_o4"}
+[01:34:16.557] Server  LOG      ✓ Compiled in 1309ms
+[01:34:38.484] Server  LOG      ✓ Compiled in 3.8s
+[01:34:43.194] Server  LOG      ✓ Compiled in 386ms
+[01:36:17.837] Server  LOG      ✓ Compiled in 427ms
+[01:36:20.763] Browser LOG     Copied to clipboard!
+[01:36:26.665] Server  LOG      ✓ Compiled in 486ms
+[01:38:05.238] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.387] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.417] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.437] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.465] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.479] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.501] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.545] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.586] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.610] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.630] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.661] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.682] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.704] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.777] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.860] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:05.996] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.019] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.096] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.143] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.246] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.330] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.494] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.524] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.614] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.663] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.687] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.705] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.752] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.808] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.870] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.899] Server  ERROR    ⨯ ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:38:06.932] Server  LOG      ✓ Compiled in 1055ms
+[01:38:07.729] Browser ERROR   ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[01:38:12.354] Browser ERROR   ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[01:39:32.839] Browser ERROR   ./app/components/RegisterModal.tsx:2:1
+Module not found: Can't resolve './CopyCodeButtonModal'
+  1 | import Image from 'next/image';
+> 2 | import CopyCodeButtonModal from './CopyCodeButtonModal';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function RegisterModal({
+  5 |   refLink = '',
+
+Import traces:
+  Client Component Browser:
+    ./app/components/RegisterModal.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/RegisterModal.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[01:39:36.751] Server  LOG      ✓ Compiled in 950ms
+[01:39:41.545] Browser LOG     Copied to clipboard!
+[01:39:45.358] Server  LOG      ✓ Compiled in 407ms
+[01:39:47.648] Browser LOG     Copied to clipboard!
+[01:39:48.460] Browser LOG     Copied to clipboard!
+[01:39:48.930] Browser LOG     Copied to clipboard!
+[01:39:49.136] Browser LOG     Copied to clipboard!
+[01:39:49.279] Browser LOG     Copied to clipboard!
+[01:39:49.429] Browser LOG     Copied to clipboard!
+[01:39:49.737] Browser LOG     Copied to clipboard!
+[01:39:49.868] Browser LOG     Copied to clipboard!
+[01:39:55.476] Server  LOG      ✓ Compiled in 544ms
+[01:39:56.969] Browser LOG     Copied to clipboard!
+[01:41:41.017] Server  LOG      ✓ Compiled in 502ms
+[01:42:03.095] Server  LOG      ✓ Compiled in 348ms
+[01:42:15.377] Server  LOG      ✓ Compiled in 244ms
+[01:42:30.401] Server  LOG      ✓ Compiled in 260ms
+[01:42:36.283] Server  LOG      ✓ Compiled in 234ms
+[01:42:46.008] Server  LOG      ✓ Compiled in 445ms
+[01:42:57.166] Server  LOG      ✓ Compiled in 498ms
+[01:43:04.264] Server  LOG      ✓ Compiled in 481ms
+[01:43:08.099] Server  LOG      ✓ Compiled in 355ms
+[01:43:11.415] Server  LOG      ✓ Compiled in 279ms
+[01:43:14.570] Browser LOG     Copied to clipboard!
+[01:43:15.384] Browser LOG     Copied to clipboard!
+[01:43:22.955] Server  LOG      ✓ Compiled in 634ms
+[01:44:48.344] Server  LOG      ✓ Compiled in 938ms
+[01:45:18.093] Server  LOG      ✓ Compiled in 788ms
+[01:45:20.102] Server  LOG     {}
+[01:45:25.447] Server  LOG      ✓ Compiled in 226ms
+[01:45:37.288] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:37.288] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:45:37.288] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:46:29.967] Server  LOG      ✓ Compiled in 269ms
+[01:46:49.465] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:46:49.465] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:46:49.465] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:46:50.864] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:47:38.763] Server  LOG      ✓ Compiled in 510ms
+[01:48:22.828] Browser LOG     Completed: ZOENUB
+[01:48:23.729] Server  LOG     {}
+[01:48:25.063] Server  LOG     {}
+[01:48:54.666] Browser LOG     Copied to clipboard!
+[01:49:04.526] Browser LOG     Copied to clipboard!
+[01:49:05.130] Browser LOG     Copied to clipboard!
+[01:49:06.962] Browser LOG     Copied to clipboard!
+[01:49:07.338] Browser LOG     Copied to clipboard!
+[01:49:07.593] Browser LOG     Copied to clipboard!
+[01:49:07.761] Browser LOG     Copied to clipboard!
+[01:49:08.148] Browser LOG     Copied to clipboard!
+[01:49:08.301] Browser LOG     Copied to clipboard!
+[01:49:08.511] Browser LOG     Copied to clipboard!
+[01:49:08.786] Browser LOG     Copied to clipboard!
+[01:49:08.940] Browser LOG     Copied to clipboard!
+[01:49:10.570] Browser LOG     Copied to clipboard!
+[01:49:15.958] Browser LOG     Copied to clipboard!
+[01:49:16.675] Browser LOG     Copied to clipboard!
+[01:49:29.687] Server  LOG     {}
+[01:49:30.270] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:49:30.270] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:49:30.270] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:49:31.669] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:51:35.062] Server  LOG      ✓ Compiled in 650ms
+[01:51:36.469] Browser ERROR   uncaughtError: ReferenceError: refLink is not defined
+[01:51:47.276] Server  LOG      ✓ Compiled in 116ms
+[01:51:47.898] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:51:54.003] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:51:54.003] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:51:54.003] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:51:55.714] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:52:24.187] Server  LOG      ✓ Compiled in 836ms
+[01:53:20.722] Server  LOG      ✓ Compiled in 372ms
+[01:54:06.462] Browser LOG     Completed: W1PGQG
+[01:54:07.240] Server  LOG     {}
+[01:54:08.525] Server  LOG     {}
+[01:56:07.063] Server  LOG      ✓ Compiled in 1389ms
+[01:56:26.626] Server  LOG      ✓ Compiled in 325ms
+[01:56:35.126] Server  LOG      ✓ Compiled in 502ms
+[01:57:32.195] Server  LOG      ✓ Compiled in 251ms
+[01:58:37.660] Server  LOG      ✓ Compiled in 840ms
+[01:58:53.015] Server  LOG      ✓ Compiled in 356ms
+[01:59:03.718] Server  LOG      ✓ Compiled in 219ms
+[01:59:19.519] Server  LOG      ✓ Compiled in 494ms
+[02:00:28.533] Server  LOG      ✓ Compiled in 2.2s
+[02:00:54.721] Server  LOG      ✓ Compiled in 160ms
+[02:01:05.176] Server  LOG      ✓ Compiled in 170ms
+[02:01:17.269] Server  LOG      ✓ Compiled in 173ms
+[02:01:28.577] Server  LOG      ✓ Compiled in 211ms
+[02:01:33.168] Server  LOG      ✓ Compiled in 350ms
+[02:01:34.115] Browser ERROR   unhandledRejection: undefined
+[02:01:51.169] Server  LOG      ✓ Compiled in 205ms
+[02:02:05.959] Server  LOG      ✓ Compiled in 151ms
+[02:02:36.576] Server  LOG      ✓ Compiled in 141ms
+[02:03:17.601] Server  LOG      ✓ Compiled in 235ms
+[02:05:58.540] Server  LOG      ✓ Compiled in 771ms
+[02:06:08.468] Server  LOG      ✓ Compiled in 1236ms
+[02:06:13.779] Browser LOG     Copied to clipboard!
+[02:06:22.255] Server  LOG      ✓ Compiled in 215ms
+[02:07:02.766] Server  LOG      ✓ Compiled in 423ms
+[02:07:05.005] Browser LOG     Copied to clipboard!
+[02:07:17.994] Server  LOG      ✓ Compiled in 227ms
+[02:07:19.761] Browser LOG     Copied to clipboard!
+[02:07:34.105] Browser LOG     Copied to clipboard!
+[02:07:51.194] Server  LOG     {}
+[02:07:51.561] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:07:51.561] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:07:51.561] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[02:07:53.119] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:08:04.486] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:08:04.486] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:08:04.486] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[02:08:06.302] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:09:01.238] Browser LOG     Completed: BQC835
+[02:09:01.792] Server  LOG     {}
+[02:09:02.789] Server  LOG     {}
+[02:09:12.655] Server  LOG     {}
+[02:09:12.774] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:09:12.774] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:09:12.774] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[02:09:14.527] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:09:51.412] Server  LOG      ✓ Compiled in 631ms
+[02:10:39.180] Server  LOG     {}
+[02:10:39.831] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:10:39.831] Browser WARN    Image with src "/images/Dopin-white.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:10:39.831] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[02:10:41.101] Browser WARN    Image with src "/images/map.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading

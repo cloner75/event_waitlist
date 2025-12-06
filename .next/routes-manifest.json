@@ -40,6 +40,18 @@
       "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
+      "page": "/api/waitlist/auth",
+      "regex": "^/api/waitlist/auth(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/waitlist/auth(?:/)?$"
+    },
+    {
+      "page": "/api/waitlist/send-otp",
+      "regex": "^/api/waitlist/send\\-otp(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/waitlist/send\\-otp(?:/)?$"
+    },
+    {
       "page": "/favicon.ico",
       "regex": "^/favicon\\.ico(?:/)?$",
       "routeKeys": {},
