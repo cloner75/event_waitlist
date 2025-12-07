@@ -34,6 +34,7 @@ export default function MapMobile() {
       <div ref={parentRef} className="h-full w-full relative z-3 xl:hidden">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
+          viewport={{ once: true }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{
             scale: { duration: 1, ease: 'easeOut', delay: 0.5, repeat: 0 },
@@ -54,6 +55,7 @@ export default function MapMobile() {
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           animate={{ y: [-0, -12, 0] }}
+          viewport={{ once: true }}
           transition={{
             scale: { duration: 1, ease: 'easeOut', delay: 1, repeat: 0 },
             y: {
@@ -86,9 +88,11 @@ export default function MapMobile() {
             top: boy2Top,
             right: boy2Right,
           }}
+          viewport={{ once: true }}
         />
         {/* boy1 */}
         <motion.img
+          viewport={{ once: true }}
           src="/images/5.jpg"
           className="z-1 absolute rounded-[14px]  w-12 aspect-auto "
           initial={{ scale: 0 }}
@@ -110,6 +114,7 @@ export default function MapMobile() {
         />
         {/* girl */}
         <motion.img
+          viewport={{ once: true }}
           src="/images/6.jpg"
           className="z-1 absolute rounded-[14px] w-12 aspect-auto"
           initial={{ scale: 0 }}

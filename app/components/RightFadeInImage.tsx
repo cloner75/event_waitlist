@@ -18,6 +18,7 @@ export default function RightFadeInImage() {
           delay: 0.5,
         },
       }}
+      viewport={{ once: true }}
     />
   );
 }

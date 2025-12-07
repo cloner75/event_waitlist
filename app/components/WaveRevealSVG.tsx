@@ -12,7 +12,7 @@ export function WaveRevealSVG() {
       ref={ref}
     >
       <motion.div
-        initial={{ width: '100%' }}
+        initial={{ width: '100%' }} viewport={{ once: true }}
         animate={isInView ? { width: '0%' } : {}}
         transition={{ duration: 1.5, ease: 'easeInOut', delay: 0.8 }}
         className="absolute top-0 z-2 right-0 h-full"

@@ -657,10 +657,6 @@
     z-index: 4;
   }
 
-  .z-14 {
-    z-index: 14;
-  }
-
   .z-15 {
     z-index: 15;
   }
@@ -673,20 +669,8 @@
     z-index: 17;
   }
 
-  .z-20 {
-    z-index: 20;
-  }
-
   .z-100 {
     z-index: 100;
-  }
-
-  .z-100\! {
-    z-index: 100 !important;
-  }
-
-  .z-\[500\] {
-    z-index: 500;
   }
 
   .m-0 {
@@ -1272,6 +1256,10 @@
     background-color: #ff395d;
   }
 
+  .bg-\[rgba\(0\,0\,0\,0\.6\)\] {
+    background-color: #0009;
+  }
+
   .bg-\[rgba\(0\,255\,76\,0\.23\)\] {
     background-color: #00ff4c3b;
   }
@@ -1344,10 +1332,6 @@
     padding: 27px;
   }
 
-  .p-\[32px\] {
-    padding: 32px;
-  }
-
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -1404,26 +1388,6 @@
     font-family: SFProDisplay, SFProDisplay Fallback;
   }
 
-  .text-\[0\.5cqw\] {
-    font-size: .5cqw;
-  }
-
-  .text-\[0\.6cqw\] {
-    font-size: .6cqw;
-  }
-
-  .text-\[0\.7cqw\] {
-    font-size: .7cqw;
-  }
-
-  .text-\[0\.8cqw\] {
-    font-size: .8cqw;
-  }
-
-  .text-\[0\.65cqw\] {
-    font-size: .65cqw;
-  }
-
   .text-\[0\.69cqw\] {
     font-size: .69cqw;
   }
@@ -1444,16 +1408,8 @@
     font-size: 1.15cqw;
   }
 
-  .text-\[2cqw\] {
-    font-size: 2cqw;
-  }
-
   .text-\[3\.5cqw\] {
     font-size: 3.5cqw;
-  }
-
-  .text-\[3cqw\] {
-    font-size: 3cqw;
   }
 
   .text-\[10px\] {
@@ -1603,6 +1559,10 @@
     opacity: .6;
   }
 
+  .opacity-\[0\.8\] {
+    opacity: .8;
+  }
+
   .shadow-\[0px_0px_11\.8px_\#00FF4C\] {
     --tw-shadow: 0px 0px 11.8px var(--tw-shadow-color, #00ff4c);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1737,20 +1697,8 @@
   }
 
   @media (min-width: 80rem) {
-    .xl\:\!mr-0 {
-      margin-right: calc(var(--spacing) * 0) !important;
-    }
-  }
-
-  @media (min-width: 80rem) {
     .xl\:mr-0\! {
       margin-right: calc(var(--spacing) * 0) !important;
-    }
-  }
-
-  @media (min-width: 80rem) {
-    .xl\:mr-\[0px\]\! {
-      margin-right: 0 !important;
     }
   }
 
@@ -1785,12 +1733,6 @@
   }
 
   @media (min-width: 80rem) {
-    .xl\:\!w-\[210px\] {
-      width: 210px !important;
-    }
-  }
-
-  @media (min-width: 80rem) {
     .xl\:\!w-\[257px\] {
       width: 257px !important;
     }
@@ -1817,18 +1759,6 @@
   @media (min-width: 80rem) {
     .xl\:w-\[210px\]\! {
       width: 210px !important;
-    }
-  }
-
-  @media (min-width: 80rem) {
-    .xl\:w-\[257px\]\! {
-      width: 257px !important;
-    }
-  }
-
-  @media (min-width: 80rem) {
-    .xl\:max-w-\[437px\] {
-      max-width: 437px;
     }
   }
 
@@ -1925,12 +1855,6 @@
   @media (min-width: 80rem) {
     .xl\:pb-10 {
       padding-bottom: calc(var(--spacing) * 10);
-    }
-  }
-
-  @media (min-width: 80rem) {
-    .xl\:pb-\[40px\] {
-      padding-bottom: 40px;
     }
   }
 

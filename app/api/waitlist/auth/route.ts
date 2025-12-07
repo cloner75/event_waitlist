@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json(
         {
           success: false,
-          message: data.message || 'Unknown error',
+          message: data.data.message || 'Unknown error',
           statusCode: response.status,
         },
         { status: response.status }

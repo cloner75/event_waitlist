@@ -1,5 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/api/waitlist/auth/route": "app/api/waitlist/auth/route.js",
   "/api/waitlist/my-invite-code/route": "app/api/waitlist/my-invite-code/route.js",
   "/api/waitlist/send-otp/route": "app/api/waitlist/send-otp/route.js",

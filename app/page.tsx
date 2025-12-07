@@ -114,7 +114,7 @@ Code: ${referralCode}`;
               src="/video.mp4"
               className="pointer-events-none absolute top-0 left-0 w-full h-full object-cover"
             />
-            <div className="absolute pointer-events-none bg-[#000000] opacity-[0.6] top-0 left-0 w-full h-full"></div>
+            <div className="absolute pointer-events-none bg-[rgba(0,0,0,0.6)] opacity-[0.8] top-0 left-0 w-full h-full"></div>
 
             <div className="relative  xl:overflow-y-scroll xl:h-screen">
               <div className="pt-[71px] fade-up-custom1 xl:pt-[15%] flex justify-center">

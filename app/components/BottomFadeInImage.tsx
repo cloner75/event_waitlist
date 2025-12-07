@@ -18,6 +18,7 @@ export default function BottomFadeInImage() {
           delay: 2.5,
         },
       }}
+      viewport={{ once: true }}
     />
   );
 }

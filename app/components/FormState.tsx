@@ -49,10 +49,15 @@ export default function FormState({
   };
   const handleResendCode = () => {
     setErrorText(undefined);
-
+    setOtp(['', '', '', '', '', '']);
     handleSendEmail();
   };
   async function handleSendOtp() {
+    if (otp.every((i) => i == '')) {
+      setErrorText('Enter valid OTP code');
+
+      return;
+    }
     setWaiting(true);
     setErrorText(undefined);
     try {
@@ -146,7 +151,7 @@ export default function FormState({
     initForm();
   }, []);
   useEffect(() => {
-    if (otp.every((i) => i == '')) setErrorText(undefined);
+    setErrorText(undefined);
   }, [otp]);
   if (loading) return undefined;
   if (step == 'email')
