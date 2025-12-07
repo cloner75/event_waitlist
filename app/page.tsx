@@ -12,6 +12,7 @@ import FormState from './components/FormState';
 import BottomFadeInImage from './components/BottomFadeInImage';
 import { motion } from 'motion/react';
 import RegisterModal from './components/RegisterModal';
+import RandomOnline from './components/RandomOnline';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -514,7 +515,7 @@ Code: ${referralCode}`;
         className={`flex max-lg:right-5 items-center pointer-events-none px-[18px] gap-3 text-white fade-up font-semibold text-[16px] backdrop-blur-[5.05px] bg-[rgba(0,255,76,0.23)] rounded-[43px] h-[45px] w-[187px] bottom-9 right-[1vw] fixed z-16 `}
       >
         <div className="bg-[#00FF4C] rounded-full h-[17px] w-[17px] shadow-[0px_0px_11.8px_#00FF4C]"></div>
-        44 Online now
+        <RandomOnline /> Online now
       </span>
     </>
   );

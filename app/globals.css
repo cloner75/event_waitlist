@@ -138,13 +138,13 @@ body {
       items-center relative flex justify-center bg-transparent;
   }
   .linear_button {
-    @apply max-w-[437px] xl:max-w-[437px] w-full h-[57px] mx-auto
+    @apply transition-all duration-200 max-w-[437px] xl:max-w-[437px] w-full h-[57px] mx-auto
          text-[18px] relative rounded-2xl font-normal text-white  items-center flex justify-center;
 
     background: linear-gradient(140.98deg, #ec30e4 9.6%, #581dff 93.68%);
   }
   .secondary_button {
-    @apply bg-[#581DFF] max-w-[437px] xl:max-w-[437px] w-full h-[57px] mx-auto
+    @apply transition-all duration-200 bg-[#581DFF] max-w-[437px] xl:max-w-[437px] w-full h-[57px] mx-auto
          text-[18px] relative rounded-2xl font-normal text-white items-center flex justify-center;
   }
   .waiting {
@@ -163,11 +163,11 @@ body {
   }
   .secondary_button:hover {
     cursor: pointer;
-    box-shadow: 0px 4px 147.1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.7);
   }
   .linear_button:hover {
     cursor: pointer;
-    box-shadow: 0px 4px 147.1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.7);
   }
 
   .otp-input:focus {
