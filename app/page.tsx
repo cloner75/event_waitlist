@@ -353,7 +353,7 @@ Code: ${referralCode}`;
                   alt="image"
                   width={1000}
                   height={1000}
-                  className="object-cover  w-full h-full fade-up bg-gray-400 rounded-[27px]"
+                  className="object-cover  w-full h-full fade-up rounded-[27px]"
                 />
               </div>
               <div
@@ -364,7 +364,7 @@ Code: ${referralCode}`;
                   alt="image"
                   width={1000}
                   height={1000}
-                  className="object-cover w-full h-full fade-up bg-gray-600 rounded-[27px]"
+                  className="object-cover w-full h-full fade-up rounded-[27px]"
                 />
               </div>
               <div
@@ -375,7 +375,7 @@ Code: ${referralCode}`;
                   alt="image"
                   width={1000}
                   height={1000}
-                  className="object-cover  w-full h-full fade-up bg-gray-400 rounded-[27px]"
+                  className="object-cover  w-full h-full fade-up rounded-[27px]"
                 />
               </div>
             </div>
