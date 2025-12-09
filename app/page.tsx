@@ -65,19 +65,18 @@ Code: ${referralCode}`;
         const nowXL = checkXL();
         if (nowXL !== isXL) {
           setIsXL(nowXL);
-
           if (timeoutRef.current) clearTimeout(timeoutRef.current);
-
           setLoading(true);
           timeoutRef.current = setTimeout(() => setLoading(false), 1500);
         }
       }, 100);
     };
 
-    window.addEventListener('resize', handleResize);
-
+    if (typeof window !== 'undefined')
+      window.addEventListener('resize', handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      if (typeof window !== 'undefined')
+        window.removeEventListener('resize', handleResize);
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       if (resizeTimeoutRef.current) clearTimeout(resizeTimeoutRef.current);
     };

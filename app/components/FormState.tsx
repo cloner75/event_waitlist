@@ -82,13 +82,17 @@ export default function FormState({
     }
   }
   async function handleSendEmail() {
-    if (!isValidEmail(email)) return;
+    if (!isValidEmail(email)) {
+      setErrorText('Please enter valid email');
+      return;
+    }
     setWaiting(true);
     try {
       let res = await httpClient.sendOtp({
         email,
       });
       handleResetCountDown();
+      setErrorText(undefined);
       setStep('otp');
     } catch (error: any) {
     } finally {
@@ -218,6 +222,13 @@ export default function FormState({
               className="text-input"
             />
           </motion.div>
+          <div className="mt-4 flex justify-between max-w-[437px] w-full items-center mx-auto">
+            {errorText != undefined && (
+              <div className="bg-[#FF395D] text-white font-normal text-[14px] rounded-full px-3 h-[31px] flex items-center">
+                {errorText}
+              </div>
+            )}
+          </div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

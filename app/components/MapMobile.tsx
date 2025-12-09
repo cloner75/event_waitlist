@@ -1,10 +1,10 @@
 'use client';
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 export default function MapMobile() {
   const parentRef = useRef(null);
-
+  const [startAnimation, setStartAnimation] = useState(false);
   const { scrollYProgress } = useScroll({
     target: parentRef,
     offset: ['0 1', '1 0'],
@@ -33,13 +33,17 @@ export default function MapMobile() {
     <div className="xl:hidden block">
       <div ref={parentRef} className="h-full w-full relative z-3 xl:hidden">
         <motion.div
-          initial={{ opacity: 0, scale: 0 }}
+          initial={{ opacity: 0 }}
           viewport={{ once: true }}
-          whileInView={{ opacity: 1, scale: 1 }}
           transition={{
             scale: { duration: 1, ease: 'easeOut', delay: 0.5, repeat: 0 },
           }}
-          className="fade-up absolute left-1/2 -translate-x-1/2 leading-[60px] font-black top-[50px] text-white text-center max-w-[250px] text-[48px]"
+          onViewportEnter={() => {
+            setStartAnimation(true);
+          }}
+          className={`${
+            startAnimation && 'revealText'
+          } absolute left-1/2 -translate-x-1/2 leading-[60px] font-black top-[50px] text-white text-center max-w-[250px] text-[48px]`}
         >
           Dopins
           <br /> are just
